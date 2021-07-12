@@ -15,7 +15,9 @@ mongoose.connect('mongodb+srv://olzhas:mission4@cluster0.exnnn.mongodb.net/missi
 const studentsSchema = {
     firstName: String,
     familyName: String,
-    age:Number
+    tasks:[
+        {id:Number,completed:Boolean},
+    ]
 }
 
 //data Model
