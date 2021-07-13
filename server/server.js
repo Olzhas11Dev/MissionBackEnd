@@ -4,6 +4,10 @@ const cors = require('cors')
 const mongoose = require('mongoose');
 const port  = 5000
 
+// avoid CORS POLICY PROBLEM
+app.use(cors());
+
+
 // connect mongoose
 mongoose.connect('mongodb+srv://olzhas:mission4@cluster0.exnnn.mongodb.net/missionDB?retryWrites=true&w=majority',
 { 
@@ -16,7 +20,7 @@ const studentsSchema = {
     firstName: String,
     familyName: String,
     tasks:[
-        {id:Number,completed:Boolean},
+        {id:Number,completed:Boolean} 
     ]
 }
 
