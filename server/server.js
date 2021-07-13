@@ -21,7 +21,8 @@ const studentsSchema = {
     familyName: String,
     tasks:[
         {id:Number,completed:Boolean} 
-    ]
+    ],
+    image:String
 }
 
 //data Model
